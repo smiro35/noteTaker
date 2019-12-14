@@ -9,14 +9,6 @@ const layout = require('express-layout');
 const fs = require('fs')
 
 
-fs.readFile('db/db.json', function(err, data) {
-    if (err) throw err;
-    // console.log(data);
-
-    return JSON.parse(data);
-});
-
-
 
 //-----MY ROUTES------
 

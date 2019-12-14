@@ -13,7 +13,7 @@ fs.readFile('db/db.json', function(err, data) {
     if (err) throw err;
     // console.log(data);
 
-    return JSON.parse(data);
+    res.send(JSON.parse(data));
 });
 
 
